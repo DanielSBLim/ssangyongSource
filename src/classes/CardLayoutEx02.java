@@ -25,6 +25,7 @@ public class CardLayoutEx02 extends Frame implements WindowListener{
 		for (int i = 0; i < obj.pnl.length; i++) {
 			obj.pnl[i] = new JPanel();
 			obj.pnl[i].setBackground(obj.color[i]);
+			obj.add(obj.cardName[i], obj.pnl[i]);
 			obj.pnl[i].addMouseListener(new MouseAdapter() {
 				
 				@Override
@@ -32,11 +33,11 @@ public class CardLayoutEx02 extends Frame implements WindowListener{
 					obj.card.show(obj, "cBlue");
 				 }
 			});
-			obj.add(obj.cardName[i], obj.pnl[i]);
-			obj.setSize(500,500);
-			obj.setVisible(true);
-			obj.addWindowListener(obj);
+			
 		}
+		obj.setSize(500,500);
+		obj.setVisible(true);
+		obj.addWindowListener(obj);
 
 	}
 
