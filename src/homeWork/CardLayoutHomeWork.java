@@ -9,16 +9,17 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class CardLayoutHomeWork extends Frame {
+public class CardLayoutHomeWork{
 
 	public static void main(String[] args) {
 		new FrmMenu();
 	}
 }
 
-class FrmMenu extends Frame implements ActionListener {
+class FrmMenu extends JFrame implements ActionListener {
 
 	PnlMenu pnlMenu = new PnlMenu();
 
@@ -64,7 +65,6 @@ class FrmMenu extends Frame implements ActionListener {
 			}
 
 		});
-
 		setSize(500, 500);
 		setVisible(true);
 	}
