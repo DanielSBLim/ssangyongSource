@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class CardLayoutHomeWork{
+public class CardLayoutHomeWork {
 
 	public static void main(String[] args) {
 		new FrmMenu();
@@ -20,22 +20,21 @@ public class CardLayoutHomeWork{
 }
 
 class FrmMenu extends JFrame implements ActionListener {
-
+	
 	PnlMenu pnlMenu = new PnlMenu();
-
 	CardLayout cardLayout = new CardLayout();
+	
 	JPanel pnlColor = new JPanel(cardLayout);
-	String[] Name = { "처음", "빨강", "주황", "노랑", "초록", "파랑", "검정" };
-
 	JPanel[] pnlsColor = { new PnlFirst(), new PnlRed(), new PnlOrange(), new PnlYellow(), new PnlBlue(),
 			new PnlGreen(), new PnlBlack() };
 
+	String[] Name = { "처음", "빨강", "주황", "노랑", "초록", "파랑", "검정" };
+	
 	FrmMenu() {
 		setLayout();
 		setCardLayout();
 		EventSetting();
 		windowSetting();
-
 	}
 
 	void setLayout() {
@@ -71,7 +70,6 @@ class FrmMenu extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println(e.getActionCommand());
 
 		for (int i = 0; i < pnlsColor.length; i++) {
 			if (e.getActionCommand().equals(Name[i])) {
