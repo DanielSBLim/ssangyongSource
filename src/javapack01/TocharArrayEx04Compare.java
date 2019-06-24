@@ -20,7 +20,7 @@ package javapack01;
 
 import java.util.Scanner;
 
-import AccountV01.UserObj;
+import classes.UserObj;
 
 public class TocharArrayEx04Compare {
 

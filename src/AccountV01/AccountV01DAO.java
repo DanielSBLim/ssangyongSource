@@ -1,5 +1,7 @@
 package AccountV01;
 
+import classes.UserObj;
+
 public class AccountV01DAO {
 		AccountV01DTO[] setDto;
 

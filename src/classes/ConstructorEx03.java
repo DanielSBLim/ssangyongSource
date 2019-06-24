@@ -1,7 +1,5 @@
 package classes;
 
-import AccountV01.UserObj;
-
 public class ConstructorEx03 {
 
 	public static void main(String[] args) {

@@ -2,7 +2,7 @@ package javapack01;
 
 import java.io.IOException;
 
-import AccountV01.UserObj;
+import classes.UserObj;
 
 public class ReadEx05Finish01 {
 

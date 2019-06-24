@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-import AccountV01.UserObj;
+import classes.UserObj;
 
 public class VoteScanerEx01 {
 	final static String[] strName = { "김경훈", "김우진", "박지우", "박채림", "신다울", "원병선", "유미희", "이선재", "이승현", "이준석", "임성범",

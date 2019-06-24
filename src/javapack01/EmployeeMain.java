@@ -1,6 +1,6 @@
 package javapack01;
 
-import AccountV01.UserObj;
+import classes.UserObj;
 
 public class EmployeeMain {
 

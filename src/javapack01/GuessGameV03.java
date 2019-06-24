@@ -19,7 +19,7 @@ package javapack01;
 import java.io.IOException;
 import java.util.Random;
 
-import AccountV01.UserObj;
+import classes.UserObj;
 
 public class GuessGameV03 {
 

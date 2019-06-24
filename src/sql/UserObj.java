@@ -3,7 +3,7 @@
  * 0?��?��?��  종료
  */
 
-package AccountV01;
+package sql;
 
 import java.io.IOException;
 import java.util.Scanner;
