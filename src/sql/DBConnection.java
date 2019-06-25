@@ -15,8 +15,12 @@ public class DBConnection {
 		String password = "happyday";
 
 		try {
+			//클래스 클래스에 forName 메서드를 이용해 해당 객체를 가져온다
 			Class.forName(driver);
 			System.out.println("DB연동 확인");
+			
+			//DriverManager 클래스에서  getConnection 메서드를 이용해  url, user, password값을 이용해
+			//연결을 한다.
 			conn = DriverManager.getConnection(url, user, password);
 			System.out.println("오라클 연결 성공");
 		} catch (ClassNotFoundException e) {
